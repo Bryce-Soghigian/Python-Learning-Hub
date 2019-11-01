@@ -41,6 +41,15 @@ print(blue.dancing_parrot())
 
 print("=================Use Of Inheritance====================")
 #==========================Use Of Inheritance Python======================++#
+"""
+Inheritance is a way of creating
+new class for using details of
+existing class without modifying it.
+The newly formed class is a derived class
+(or child class). Similarly, the existing
+class is a base class (or parent class).
+"""
+
 class Bird:
     def __init__(self):
         print("BIrd is ready to fly my guy")
@@ -68,3 +77,41 @@ penguinNation = Penguin()
 penguinNation.who_am_I()
 penguinNation.swim()
 penguinNation.run()
+
+print("===========Class Encapsulation ==================")
+"""
+Using OOP in Python, we can restrict access
+to methods and variables. This prevent data
+from direct modification which is called encapsulation.
+In Python, we denote private attribute using
+ underscore as prefix i.e single “ _ “ or double “ __“.
+"""
+class Computer:
+    def __init__(self):
+        self.__maxprice = 900
+
+    def sell(self):
+        print("Selling Price:{}".format(self.__maxprice))
+
+    def setMaxPrice(self,price):
+        self.__maxprice = price
+
+    
+    
+c= Computer()
+c.sell()
+
+#changing prine
+ 
+c.__maxprice = 1000
+c.sell()
+
+#using the setter function instead
+
+c.setMaxPrice(1000)
+c.sell()
+
+#WE have to use a setter function here due to the way we declared
+# our __maxprice attribute.
+
+#Initializing a method that way will 
