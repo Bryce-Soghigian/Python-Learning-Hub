@@ -57,3 +57,49 @@ result = text.endswith('pog.')
 # returns True
 print(result)
 print(f"========================================")
+#==============expandtabs() method================#
+# Syntax
+#string.expandtabs(tabsize)
+
+print(f"============Expand Tabs Method===========")
+expand_string = 'xyz\t12345\tabc'
+expand_string_result = expand_string.expandtabs()
+print(expand_string_result)
+print(f"========================================")
+#===================Endcode() str method()===========#
+print("===========Encoding Methods===============")
+#Syntax 
+# string.encode(encoding="UTF-8", errors="strict")
+unicode_string = 'pythön!'
+print('unicode_string',unicode_string)
+string_utf = unicode_string.encode()
+print("encoded string", string_utf)
+"""The string is: pythön!
+The encoded version is: b'pyth\xc3\xb6n!'
+"""
+print("=========================================")
+#===================Find() method======================#
+#syntax 
+#str.find(sub[, start[, end]])
+"""params"""
+#sub - It's the substring to be searched in the str string.
+#start and end (optional) - substring is searched within str[start:end]
+print("==================find() method===================")
+quote = 'Let it be, let it be, let it be'
+
+find_result = quote.find('let it')
+print("Substring 'let it':", find_result)
+
+find_result = quote.find('small')
+print("Substring 'small ':", find_result)
+
+# How to use find()
+if  (quote.find('be,') != -1):
+  print("Contains substring 'be,'")
+else:
+  print("Doesn't contain substring")
+
+
+print("==========================================")
+
+
