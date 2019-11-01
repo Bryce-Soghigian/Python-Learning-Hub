@@ -59,7 +59,7 @@ class Penguin(Bird):
         print("PENGUIN WILL NOT LOSE THE BATTLE")
 
     def who_am_I(self):
-        print("I im penguin ^.^")
+        print("I am penguin ^.^")
 
     def run(self):
         print("RUN PENGUIN. BECOME BEST BIRD")
