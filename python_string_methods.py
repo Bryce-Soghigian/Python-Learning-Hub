@@ -4,7 +4,7 @@ test_str = 'test String string Test'
 print("==========Capitialize Method==============")
 print("---Sets the First Letter to a captial and rest to .lower()")
 print(test_str.capitalize())
-print(f"========================================")
+
 
 #============Center Method===============#
 #Syntax
@@ -20,7 +20,7 @@ print("Centered String: ", new_string)
 case_test = "Lets keep GOING :pog:"
 print("============.casefold() Method =============")
 print(case_test.casefold())
-print(f"========================================")
+
 
 #=========Count Method===========#
 #Syntax
@@ -35,7 +35,7 @@ substring = "gangster"
 counted = main_string.count(substring)
 print(f"========.count() method=========")
 print(f"main_sting has {counted} occurences of {substring}")
-print(f"========================================")
+
 #=========endswith() Method============#
 #Syntax
 #str.endswith(suffix[, start[, end]])
@@ -45,7 +45,7 @@ print(f"========================================")
 #end (optional) - Ending position where suffix is to be checked within the string.
 
 
-print(f"========================================")
+
 print(f"============Endswith() Method===============")
 text = "Python is pog."
 
@@ -56,7 +56,7 @@ print(result)
 result = text.endswith('pog.')
 # returns True
 print(result)
-print(f"========================================")
+
 #==============expandtabs() method================#
 # Syntax
 #string.expandtabs(tabsize)
@@ -65,7 +65,7 @@ print(f"============Expand Tabs Method===========")
 expand_string = 'xyz\t12345\tabc'
 expand_string_result = expand_string.expandtabs()
 print(expand_string_result)
-print(f"========================================")
+
 #===================Endcode() str method()===========#
 print("===========Encoding Methods===============")
 #Syntax 
@@ -77,7 +77,7 @@ print("encoded string", string_utf)
 """The string is: pythön!
 The encoded version is: b'pyth\xc3\xb6n!'
 """
-print("=========================================")
+
 #===================Find() method======================#
 #syntax 
 #str.find(sub[, start[, end]])
@@ -100,6 +100,19 @@ else:
   print("Doesn't contain substring")
 
 
-print("==========================================")
+#=======================Format Method===================# 
+print("==================Format method=============")
+# default arguments
+print("Hello {}, your balance is {}.".format("Adam", 230.2346))
+
+# positional arguments
+print("Hello {0}, your balance is {1}.".format("Adam", 230.2346))
+
+# keyword arguments
+print("Hello {name}, your balance is {blc}.".format(name="Adam", blc=230.2346))
+
+# mixed arguments
+print("Hello {0}, your balance is {blc}.".format("Adam", blc=230.2346))
+
 
 
