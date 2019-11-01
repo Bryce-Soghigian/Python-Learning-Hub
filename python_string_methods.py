@@ -43,12 +43,14 @@ print(f"========================================")
 #suffix - String or tuple of suffixes to be checked
 #start (optional) - Beginning position where suffix is to be checked within the string.
 #end (optional) - Ending position where suffix is to be checked within the string.
+
+
+print(f"========================================")
+print(f"============Endswith() Method===============")
 text = "Python is pog."
 
 result = text.endswith('pog')
-# returns False
-print(f"========================================")
-print(f"============Endswith() Method===============")
+#returns false
 print(result)
 
 result = text.endswith('pog.')
