@@ -5,7 +5,7 @@ Javascript Solution
 
 const linear_search = (arr, kw) => {
     for(let i = 0; i<arr.length; i++){
-        if(i===kw){
+        if(arr[i]===kw){
             return kw
         }else{
             return "keyword doesn't exist within arr"
