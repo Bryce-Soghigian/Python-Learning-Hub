@@ -12,6 +12,23 @@ The lists:
 
 
 """
+
+"""JS Selection sort
+const sort = (arr) => {
+    for(let i = 0;i<arr.length;i++){
+       let min = i
+       for(let j = 0;i+1<arr.length;j+1){
+           if(arr[min]> arr[j]){
+               min = j
+           }
+           #swap values
+       arr[i], arr[min] = arr[min], arr[i]
+       } 
+    }
+}
+
+
+"""
 #Iterative Selection Sort
 def selection_sort(arr):
     for i in range(len(arr)):
