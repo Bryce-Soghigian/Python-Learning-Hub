@@ -18,7 +18,6 @@ const linear_search = (arr, kw) => {
 """
 array = [1,2,4,5,6]
 #Python Solution
-
 def linear_search(arr,kw):
     for i in range(0, len(arr)-1):
         if i == kw:

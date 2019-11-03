@@ -35,6 +35,40 @@ for i in a:
         j = j-1
 print (a)
 
+#Recursive insertion sort
+ar = [1,2,6,7,89,32,13]
+def recursive_insertion_sort(arr,n):
+    #base case
+    if n<=1:
+        return
+    #sorting the first n-1 ele
+    recursive_insertion_sort(arr,n-1)
+    #insert last ele in correct postion in sorted arr
+    last = arr[n-1]
+    j= n-2
+      # Move elements of arr[0..i-1], that are 
+      # greater than key, to one position ahead 
+      # of their current position
+    while(j>=0 and arr[j]>last):
+        arr[j+1] = arr[j]
+        j = j-1
+
+    arr[j+1] = last
+
+
+
+def printArray(arr,n): 
+    for i in range(n): 
+        print(arr[i],)  
+  
+# Driver program to test insertion sort  
+#Testing my sorted
+arr = [12,11,13,5,6] 
+n = len(arr) 
+recursive_insertion_sort(arr, n) 
+printArray(arr, n) 
+
+
 """explaining the code
 for i in a: // Here we are iterating through a list
 
