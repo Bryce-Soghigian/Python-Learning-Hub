@@ -15,7 +15,19 @@ const insertion_sort = (ar) => {
     }
 }
 insertion_sort(a)
+
+
+Complexity:
+
+    Space Complexity == 0(1)
+    Time Complexity == Θ(n^2)
+
+
+
+
 """
+
+
 
 
 a = [16, 19, 11, 15, 10, 12, 14]

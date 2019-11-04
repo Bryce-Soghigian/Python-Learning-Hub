@@ -9,6 +9,9 @@ The lists:
     2. Remaining subarray which hasn't been sorted yet
 
 
+Complexity: 
+    Time Complexity = Θ(n^2)
+    Space Complexity = 0(1)
 
 
 """
@@ -38,3 +41,5 @@ def selection_sort(arr):
                 min = j
         
         arr[i], arr[min] = arr[min], arr[i]
+
+

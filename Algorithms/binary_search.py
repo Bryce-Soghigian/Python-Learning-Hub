@@ -15,6 +15,9 @@ while(low<=high){
 
 }
 
+Complexity:
+    Space Complexity == O(1)
+    Time Complexity == O(Log n)
 
 """
 """

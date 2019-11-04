@@ -13,7 +13,9 @@ const linear_search = (arr, kw) => {
     }
 } 
 
-
+Complexity:
+    Space Complexity == O(1)
+    Time Complexity == -O(n)
 
 """
 array = [1,2,4,5,6]
