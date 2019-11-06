@@ -14,6 +14,16 @@ def merge( arrA, arrB ):
   
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
+"""
+
+Merge Sort works both with a large and small number of elements
+making it more efficient than Bubble, Insertion and Selection
+Sort. This comes at a price since Merge Sort uses additional
+space to produce a sorted list. The worst case runtime
+complexity of Merge Sort is o(nlog(n)) and the space 
+complexity is n.
+
+"""
 def merge_sort( arr ):
     # TO-DO
     print("split",arr)
